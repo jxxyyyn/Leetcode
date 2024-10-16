@@ -4,10 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        
-        count = {}
-        for num in nums:
-            if num in count:
+
+        hashset = set()
+        for n in nums:
+            if n in hashset:
                 return True
-            count[num] = 1
+            hashset.add(n)
         return False
