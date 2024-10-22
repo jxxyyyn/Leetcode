@@ -6,9 +6,6 @@ class Solution(object):
         :rtype: bool
         """
 
-        list_s = []
-        list_t = []
-        
         if len(s) != len(t):
             return False
         
