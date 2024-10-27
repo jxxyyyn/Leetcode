@@ -7,11 +7,6 @@ class Solution(object):
         """
         
         from collections import Counter
-        counted_nums = Counter(nums)
-        counted_nums = counted_nums.most_common(k)
         
-        frequentElements = []
-        for i in counted_nums:
-            frequentElements.append(i[0])
-            
-        return frequentElements
+        counted_nums = Counter(nums).most_common(k)
+        return [num for num, _ in counted_nums]
